@@ -6,7 +6,7 @@ public class Aerolinea {
 	private String nombre;
 	
 	//Constructor
-	public Aerolinea(int codigo, String name) {
+	public Aerolinea(int codigo, String nombre) {
 		super();
 		this.codigo = codigo;
 		this.nombre = nombre;
