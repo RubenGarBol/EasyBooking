@@ -1,4 +1,4 @@
-
+package sample;
 public abstract class Pago {
 	//Atributos 
 	private int cod_pago;

@@ -1,12 +1,11 @@
-
+package sample;
 public class Aeropuerto {
 
 	//Atributos 
 	private int codigo;
 	private String ciudad;
-	private String Pais;
+	private String pais;
 	private String nombre;
-	
 	//Constructor
 	public Aeropuerto(int codigo, String ciudad, String pais, String nombre) {
 		this.codigo = codigo;
@@ -29,11 +28,11 @@ public class Aeropuerto {
 	}
 
 	public String getPais() {
-		return Pais;
+		return pais;
 	}
 
 	public void setPais(String pais) {
-		Pais = pais;
+		pais = pais;
 	}
 
 	public String getNombre() {

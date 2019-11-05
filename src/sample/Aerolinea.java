@@ -1,4 +1,4 @@
-
+package sample;
 public class Aerolinea {
 
 	//Atributos 
