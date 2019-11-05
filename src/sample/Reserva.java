@@ -1,11 +1,14 @@
+package sample;
+
 import java.util.ArrayList;
 import java.util.Date;
+
 
 public class Reserva {
 
 	//Atributos
 	private int codigo;
-	private Date fecha_reserva; // TODO ¿Es mejor usar un string con formato?
+	private Date fecha_reserva; // TODO ï¿½Es mejor usar un string con formato?
 	private int cod_vuelo;
 	private float importe;
 	private SisPago metodo_pago;
