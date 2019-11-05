@@ -3,13 +3,13 @@ public class Aerolinea {
 
 	//Atributos 
 	private int codigo;
-	private String name;
+	private String nombre;
 	
 	//Constructor
 	public Aerolinea(int codigo, String name) {
 		super();
-		this.codigo = codigo; //Hola
-		this.name = name;
+		this.codigo = codigo;
+		this.nombre = nombre;
 	}
 	
 	//Getters y Setters
@@ -17,6 +17,6 @@ public class Aerolinea {
 		return codigo;
 	}
 	public String getNombre() {
-		return name;
+		return nombre;
 	}
 }
