@@ -11,8 +11,8 @@ import javafx.stage.Stage;
 import javax.jdo.*;
 import java.util.List;
 
-public class Main {
-
+public class Main
+{
     /*
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -21,14 +21,15 @@ public class Main {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }*/
-
     static PersistenceManagerFactory pManagerFactory;
     static PersistenceManager pManager;
     static Transaction transaction;
 
     //Método para iniciar los elementos por primera vez
-    public static void IniciarElementos(){
-        try {
+    public static void IniciarElementos()
+    {
+        try
+        {
             pManagerFactory = JDOHelper.getPersistenceManagerFactory("datanucleus.properties");
             pManager = pManagerFactory.getPersistenceManager();
             transaction = pManager.currentTransaction();
@@ -39,7 +40,8 @@ public class Main {
 
     //Método que devuelve una lista de vuelos que son de una aerolinea concreta
     public static List<Vuelo> selectVuelosPorAerolinea(int codAerolinea){
-        try{
+        try
+        {
             transaction.begin();
 
             Query q = pManager.newQuery("SELECT FROM VUELOS WHERE cod_aerolinea = " + codAerolinea );
@@ -53,8 +55,8 @@ public class Main {
         return null;
     }
 
-
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         IniciarElementos();
     }
 }
