@@ -44,7 +44,7 @@ public class Main
         {
             transaction.begin();
 
-            Query q = pManager.newQuery("SELECT FROM VUELOS WHERE cod_aerolinea = " + codAerolinea );
+            Query q = pManager.newQuery("SELECT FROM VUELO WHERE cod_aerolinea = " + codAerolinea );
             List<Vuelo> lVuelo = (List)q.execute();
 
             transaction.commit();
@@ -58,6 +58,7 @@ public class Main
     public static void main(String[] args)
     {
         IniciarElementos();
+        System.out.println("hola");
     }
 }
 /*try {

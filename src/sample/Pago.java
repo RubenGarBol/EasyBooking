@@ -1,4 +1,7 @@
 package sample;
+import javax.jdo.annotations.PersistenceCapable;
+
+@PersistenceCapable
 public abstract class Pago {
 	//Atributos 
 	private int cod_pago;

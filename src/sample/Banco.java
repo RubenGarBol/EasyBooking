@@ -1,6 +1,8 @@
 package sample;
+import javax.jdo.annotations.PersistenceCapable;
 import java.util.Date;
 
+@PersistenceCapable
 public class Banco extends Pago{
 
 	//Atributos

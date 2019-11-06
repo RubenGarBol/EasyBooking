@@ -1,6 +1,8 @@
 package sample;
 import java.util.Date;
+import javax.jdo.annotations.PersistenceCapable;
 
+@PersistenceCapable
 public class Vuelo {
 	//Atributos
 	private int codigo;
