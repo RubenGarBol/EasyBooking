@@ -62,9 +62,12 @@ public class Main
         {
             transaction.begin();
 
-            Query q = pManager.newQuery("SELECT * FROM VUELO");
+            Query q = pManager.newQuery("SELECT ALL FROM vuelo");
             List<Vuelo> lVuelo = (List)q.execute();
             lVuelo.toString();
+
+            System.out.println("pepe");
+
             transaction.commit();
         }catch (Exception e){
             System.out.println("* Error leyendo de BD: " + e.getMessage());
