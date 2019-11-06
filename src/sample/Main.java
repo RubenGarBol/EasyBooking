@@ -39,13 +39,13 @@ public class Main
     }
 
     //Método que devuelve una lista de vuelos que son de una aerolinea concreta
-    public static List<Vuelo> selectVuelosPorAerolinea(int codAerolinea){
+    public static List<Aerolinea> selectAerolinea(int codAerolinea){
         try
         {
             transaction.begin();
 
-            Query q = pManager.newQuery("SELECT FROM VUELO WHERE cod_aerolinea = " + codAerolinea );
-            List<Vuelo> lVuelo = (List)q.execute();
+            Query q = pManager.newQuery("SELECT * FROM VUELO");
+            List<Aerolinea> lVuelo = (List)q.execute();
 
             transaction.commit();
             return lVuelo;
@@ -58,6 +58,17 @@ public class Main
     public static void main(String[] args)
     {
         IniciarElementos();
+        try
+        {
+            transaction.begin();
+
+            Query q = pManager.newQuery("SELECT * FROM VUELO");
+            List<Vuelo> lVuelo = (List)q.execute();
+            lVuelo.toString();
+            transaction.commit();
+        }catch (Exception e){
+            System.out.println("* Error leyendo de BD: " + e.getMessage());
+        }
         System.out.println("hola");
     }
 }
