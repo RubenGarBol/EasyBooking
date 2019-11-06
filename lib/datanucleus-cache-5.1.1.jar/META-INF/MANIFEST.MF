@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven Bundle Plugin
+Built-By: andy
+Build-Jdk: 1.8.0_161
+Bnd-LastModified: 1521110196134
+Bundle-Description: DataNucleus third-party Cache plugin
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: DataNucleus Cache plugin
+Bundle-SymbolicName: org.datanucleus.cache;singleton:=true
+Bundle-Version: 5.1.1
+Export-Package: org.datanucleus.cache.cacheonix;uses:="org.datanucleus
+ ,org.datanucleus.cache,org.datanucleus.store.query,org.datanucleus.st
+ ore.query.cache";version="5.1.1",org.datanucleus.cache.coherence;uses
+ :="com.tangosol.net,org.datanucleus,org.datanucleus.cache";version="5
+ .1.1",org.datanucleus.cache.ehcache;uses:="org.datanucleus,org.datanu
+ cleus.cache";version="5.1.1",org.datanucleus.cache.oscache;uses:="org
+ .datanucleus,org.datanucleus.cache";version="5.1.1",org.datanucleus.c
+ ache.redis;uses:="org.datanucleus,org.datanucleus.cache,org.datanucle
+ us.store.query,org.datanucleus.store.query.cache";version="5.1.1",org
+ .datanucleus.cache.spymemcached;uses:="org.datanucleus,org.datanucleu
+ s.cache,org.datanucleus.store.query,org.datanucleus.store.query.cache
+ ";version="5.1.1",org.datanucleus.cache.xmemcached;uses:="org.datanuc
+ leus,org.datanucleus.cache,org.datanucleus.store.query,org.datanucleu
+ s.store.query.cache";version="5.1.1"
+Import-Package: org.datanucleus;version="5.1.0.release",org.datanucleu
+ s.api;version="5.1.0.release",org.datanucleus.cache;version="5.1.0.re
+ lease",org.datanucleus.exceptions;version="5.1.0.release",org.datanuc
+ leus.identity;version="5.1.0.release",org.datanucleus.metadata;versio
+ n="5.1.0.release",org.datanucleus.query;version="5.1.0.release",org.d
+ atanucleus.store.query;version="5.1.0.release",org.datanucleus.store.
+ query.cache;version="5.1.0.release",org.datanucleus.util;version="5.1
+ .0.release",com.opensymphony.oscache.base;resolution:=optional,com.op
+ ensymphony.oscache.general;resolution:=optional,com.tangosol.net;reso
+ lution:=optional,net.rubyeye.xmemcached;resolution:=optional,net.ruby
+ eye.xmemcached.utils;resolution:=optional,net.sf.ehcache;resolution:=
+ optional,net.spy.memcached;resolution:=optional,net.spy.memcached.int
+ ernal;resolution:=optional,org.apache.commons.pool2.impl;resolution:=
+ optional;version="[2.0,3)",redis.clients.jedis;resolution:=optional,r
+ edis.clients.util;resolution:=optional
+Tool: Bnd-2.1.0.20130426-122213
+

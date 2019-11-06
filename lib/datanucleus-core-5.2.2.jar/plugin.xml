@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<!--**********************************************************************
+Copyright (c) 2006 Erik Bengtson and others. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Contributors:
+2006 Andy Jefferson - added enhancer extension point
+2006 Andy Jefferson - added datasource extension point
+2006 Andy Jefferson - added L2 cache, value generators, etc
+2008 Andy Jefferson - added persistence properties, query methods
+2009 Andy Jefferson - query caching options
+    ...
+**********************************************************************-->
+<plugin id="org.datanucleus" name="DataNucleus Core" provider-name="DataNucleus">
+    <extension-point id="api_adapter" name="Api Adapter" schema="schema/apiadapter.exsd"/>
+    <extension-point id="autostart" name="AutoStartMechanism" schema="schema/autostart.exsd"/>
+    <extension-point id="cache_level1" name="Level1 Cache" schema="schema/cache_level1.exsd"/>
+    <extension-point id="cache_level2" name="Level2 Cache" schema="schema/cache_level2.exsd"/>
+    <extension-point id="cache_query_compilation" name="Query Compilation Cache" schema="schema/cache_query_compilation.exsd"/>
+    <extension-point id="cache_query_compilation_store" name="Query Datastore Compilation Cache" schema="schema/cache_query_compilation_store.exsd"/>
+    <extension-point id="cache_query_result" name="Query Result Cache" schema="schema/cache_query_result.exsd"/>
+    <extension-point id="callbackhandler" name="Callback Handler" schema="schema/callbackhandler.exsd"/>
+    <extension-point id="classloader_resolver" name="ClassLoader Resolver" schema="schema/classloader_resolver.exsd"/>
+    <extension-point id="identity_string_translator" name="Identity String Translator" schema="schema/identity_string_translator.exsd"/>
+    <extension-point id="identity_key_translator" name="Identity Key Translator" schema="schema/identity_key_translator.exsd"/>
+    <extension-point id="jta_locator" name="JTA Locator" schema="schema/jta_locator.exsd"/>
+    <extension-point id="query_method_prefix" name="Query Method Prefix" schema="schema/query_method_prefix.exsd"/>
+    <extension-point id="query_method_evaluators" name="Query Method Evaluators" schema="schema/query_method_evaluator.exsd"/>
+    <extension-point id="store_datastoreidentity" name="Datastore Identity" schema="schema/datastoreidentity.exsd"/>
+    <extension-point id="store_manager" name="Store Manager" schema="schema/store_manager.exsd"/>
+    <extension-point id="store_valuegenerator" name="Value Generator" schema="schema/valuegenerator.exsd"/>
+    <extension-point id="store_connectionfactory" name="Connection Factory" schema="schema/connectionfactory.exsd"/>
+    <extension-point id="java_type" name="Java Type" schema="schema/java_type.exsd"/>
+    <extension-point id="type_converter" name="Java Converter Type" schema="schema/type_converter.exsd"/>
+    <extension-point id="persistence_properties" name="Persistence Properties" schema="schema/persistenceproperties.exsd"/>
+    <extension-point id="metadata_handler" name="MetaData Handler" schema="schema/metadata_handler.exsd"/>
+    <extension-point id="metadata_manager" name="MetaDataManager" schema="schema/metadata_manager.exsd"/>
+    <extension-point id="metadata_entityresolver" name="MetaDataEntityResolver" schema="schema/metadata_entityresolver.exsd"/>
+    <extension-point id="annotations" name="Annotations" schema="schema/annotations.exsd"/>
+    <extension-point id="class_annotation_handler" name="Class Annotation Handler" schema="schema/class_annotation_handler.exsd"/>
+    <extension-point id="member_annotation_handler" name="Member Annotation Handler" schema="schema/member_annotation_handler.exsd"/>
+    <extension-point id="identifier_namingfactory" name="Identifier NamingFactory" schema="schema/identifier_namingfactory.exsd"/>
+
+    <!-- METADATA ENTITY RESOLVERS -->
+    <extension point="org.datanucleus.metadata_entityresolver">
+        <!-- Persistence XML -->
+        <entityresolver identity="http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://xmlns.jcp.org/xml/ns/persistence/persistence_1_0.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://xmlns.jcp.org/xml/ns/persistence/persistence_2_0.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://java.sun.com/xml/ns/persistence/persistence_2_1.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver identity="http://www.datanucleus.org/xsd/jpa/persistence_2_2.xsd" type="SYSTEM" url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+        <entityresolver url="/org/datanucleus/metadata/persistence_2_2.xsd"/>
+    </extension>
+</plugin>
