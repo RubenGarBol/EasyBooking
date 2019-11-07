@@ -1,4 +1,4 @@
-<project name="2.4_accountsJDO" default="4.run-example" basedir=".">
+<project name="EasybookingJDO" default="4.run-example" basedir=".">
     <property name="src.dir" location="src"/>
     <property name="bin.dir" location="bin"/>
     <property name="lib.dir" location="lib"/>

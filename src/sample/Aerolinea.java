@@ -1,11 +1,13 @@
 package sample;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public class Aerolinea {
 
-	//Atributos 
+	//Atributos
+	@PrimaryKey
 	private int codigo;
 	private String nombre;
 	
@@ -22,5 +24,8 @@ public class Aerolinea {
 	}
 	public String getNombre() {
 		return nombre;
+	}
+	public void setNombre(String nombre){
+		this.nombre = nombre;
 	}
 }
