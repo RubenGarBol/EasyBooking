@@ -1,6 +1,7 @@
 package sample;
 import java.util.ArrayList;
 import java.util.Date;
+
 import javax.jdo.annotations.PersistenceCapable;
 
 @PersistenceCapable
