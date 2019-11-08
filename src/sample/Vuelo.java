@@ -1,13 +1,15 @@
 package sample;
 import java.util.Date;
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public class Vuelo {
 	//Atributos
+	@PrimaryKey
 	private int codigo;
-	private Date fecha_hora_salida;// TODO �Es mejor usar un string con formato?
-	private Date fecha_hora_llegada;// TODO �Es mejor usar un string con formato?
+	private Date fecha_hora_salida;
+	private Date fecha_hora_llegada;
 	private int cod_aeropuerto_orig;
 	private int cod_aeropuerto_dest;
 	private int cod_aerolinea;	

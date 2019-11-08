@@ -3,13 +3,15 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public class Reserva {
 
 	//Atributos
+	@PrimaryKey
 	private int codigo;
-	private Date fecha_reserva; // TODO �Es mejor usar un string con formato?
+	private Date fecha_reserva;
 	private int cod_vuelo;
 	private float importe;
 	private SisPago metodo_pago;

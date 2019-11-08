@@ -1,10 +1,12 @@
 package sample;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public abstract class Pago {
-	//Atributos 
+	//Atributos
+	@PrimaryKey
 	private int cod_pago;
 
 	//Constructor

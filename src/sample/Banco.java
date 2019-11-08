@@ -7,7 +7,7 @@ public class Banco extends Pago{
 
 	//Atributos
 	private long num_cuenta;
-	private Date fecha_caducidad; // TODO �Es mejor usar un string con formato?
+	private Date fecha_caducidad;
 
 	//Constructor
 	public Banco(int cod_pago, long num_cuenta, Date fecha_caducidad) {

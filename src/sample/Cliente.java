@@ -1,11 +1,13 @@
 package sample;
 
 import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.PrimaryKey;
 
 @PersistenceCapable
 public class Cliente {
 	
 	//Atributos
+	@PrimaryKey
 	private String email;
 	private SisReg sistema_registro;
 	
@@ -30,5 +32,3 @@ public class Cliente {
 		this.sistema_registro = sistema_registro;
 	}
 }
-
-//  D:<
