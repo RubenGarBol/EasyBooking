@@ -1,4 +1,4 @@
-package sample;
+package jdo;
 public enum SisReg {
 	Google,Facebook
 }

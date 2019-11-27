@@ -1,4 +1,4 @@
-17:59:49,752 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+17:59:49,752 (main) ERROR [DataNucleus.Datastore.Schema] - La inicializaciï¿½n del base de datos ha fallado.
 Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -29,8 +29,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at sample.Main.IniciarElementos(Unknown Source)
-	at sample.Main.main(Unknown Source)
+	at jdo.Main.IniciarElementos(Unknown Source)
+	at jdo.Main.main(Unknown Source)
 Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -120,8 +120,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at sample.Main.IniciarElementos(Unknown Source)
-	at sample.Main.main(Unknown Source)
+	at jdo.Main.IniciarElementos(Unknown Source)
+	at jdo.Main.main(Unknown Source)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -151,7 +151,7 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 40 more
 17:59:49,755 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Connection timed out: connect
-18:02:01,286 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+18:02:01,286 (main) ERROR [DataNucleus.Datastore.Schema] - La inicializaciï¿½n del base de datos ha fallado.
 Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -182,8 +182,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at sample.Main.IniciarElementos(Unknown Source)
-	at sample.Main.main(Unknown Source)
+	at jdo.Main.IniciarElementos(Unknown Source)
+	at jdo.Main.main(Unknown Source)
 Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -273,8 +273,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at sample.Main.IniciarElementos(Unknown Source)
-	at sample.Main.main(Unknown Source)
+	at jdo.Main.IniciarElementos(Unknown Source)
+	at jdo.Main.main(Unknown Source)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -304,7 +304,7 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 40 more
 18:02:01,289 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Connection timed out: connect
-18:05:54,654 (main) ERROR [DataNucleus.Datastore.Schema] - La inicialización del base de datos ha fallado.
+18:05:54,654 (main) ERROR [DataNucleus.Datastore.Schema] - La inicializaciï¿½n del base de datos ha fallado.
 Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -335,8 +335,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at sample.Main.IniciarElementos(Unknown Source)
-	at sample.Main.main(Unknown Source)
+	at jdo.Main.IniciarElementos(Unknown Source)
+	at jdo.Main.main(Unknown Source)
 Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -426,8 +426,8 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:814)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:1093)
 	at javax.jdo.JDOHelper.getPersistenceManagerFactory(JDOHelper.java:924)
-	at sample.Main.IniciarElementos(Unknown Source)
-	at sample.Main.main(Unknown Source)
+	at jdo.Main.IniciarElementos(Unknown Source)
+	at jdo.Main.main(Unknown Source)
 Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
@@ -457,3 +457,14 @@ Caused by: java.net.ConnectException: Connection timed out: connect
 	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
 	... 40 more
 18:05:54,658 (main) ERROR [DataNucleus.Datastore] - Exception thrown creating StoreManager : Connection timed out: connect
+10:41:28,913 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Aerolinea.class" no existe!
+10:41:28,916 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Aeropuerto.class" no existe!
+10:41:28,916 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Banco.class" no existe!
+10:41:28,916 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Cliente.class" no existe!
+10:41:28,917 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Main.class" no existe!
+10:41:28,917 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Pago.class" no existe!
+10:41:28,918 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\PayPal.class" no existe!
+10:41:28,918 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Reserva.class" no existe!
+10:41:28,918 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\SisPago.class" no existe!
+10:41:28,918 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\SisReg.class" no existe!
+10:41:28,919 (main) ERROR [DataNucleus.Enhancer] - ¡Archivo "C:\Users\jbask\IdeaProjects\EasyBooking\bin\jdo\Vuelo.class" no existe!

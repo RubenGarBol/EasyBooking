@@ -1,4 +1,4 @@
-package sample;
+package jdo;
 public enum SisPago {
 	PayPal,Banco
 }

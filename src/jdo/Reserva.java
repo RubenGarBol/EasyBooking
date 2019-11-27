@@ -1,4 +1,4 @@
-package sample;
+package jdo;
 import java.util.ArrayList;
 import java.util.Date;
 

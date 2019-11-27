@@ -43,7 +43,7 @@
     </target>
 
     <target name="4.Ejecutar Main" depends="3.Crear tablas en la BD" description="Ejecutar test del Main">
-        <java classname="sample.Main" classpathref="classpath" fork="true">
+        <java classname="jdo.Main" classpathref="classpath" fork="true">
             <jvmarg value="-Dlog4j.configuration=log4j.properties"/>
         </java>
     </target>

@@ -1,4 +1,4 @@
-package sample;
+package jdo;
 import java.util.Date;
 import javax.jdo.annotations.PersistenceCapable;
 
