@@ -10,17 +10,22 @@ public class Aeropuerto {
 	private String ciudad;
 	private String pais;
 	private String nombre;
+
 	//Constructor
-	public Aeropuerto(int codigo, String ciudad, String pais, String nombre) {
-		this.codigo = codigo;
-		this.ciudad = ciudad;
-		this.pais = pais;
-		this.nombre = nombre;
+	public Aeropuerto(){
+		this.codigo = 0;
+		this.ciudad = "";
+		this.pais = "";
+		this.nombre = "";
 	}
 
 	//Getters y Setters
 	public int getCodigo() {
 		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public String getCiudad() {

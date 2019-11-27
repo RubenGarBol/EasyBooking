@@ -9,13 +9,13 @@ public class Cliente {
 	//Atributos
 	@PrimaryKey
 	private String email;
-	private SisReg sistema_registro;
+	private SisReg sistemaRegistro;
 	
 	//Constructor
-	public Cliente(String email, SisReg sistema_registro) {
+	public Cliente() {
 		super();
-		this.email = email;
-		this.sistema_registro = sistema_registro;
+		this.email = "";
+		this.sistemaRegistro = null;
 	}
 	
 	//Getters y Setters
@@ -25,10 +25,10 @@ public class Cliente {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public SisReg getSistema_registro() {
-		return sistema_registro;
+	public SisReg getsistemaRegistro() {
+		return sistemaRegistro;
 	}
-	public void setSistema_registro(SisReg sistema_registro) {
-		this.sistema_registro = sistema_registro;
+	public void setsistemaRegistro(SisReg sistemaRegistro) {
+		this.sistemaRegistro = sistemaRegistro;
 	}
 }

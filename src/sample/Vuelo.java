@@ -1,5 +1,6 @@
 package sample;
 import java.util.Date;
+import javax.jdo.annotations.NotPersistent;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
@@ -8,86 +9,94 @@ public class Vuelo {
 	//Atributos
 	@PrimaryKey
 	private int codigo;
-	private Date fecha_hora_salida;
-	private Date fecha_hora_llegada;
-	private int cod_aeropuerto_orig;
-	private int cod_aeropuerto_dest;
-	private int cod_aerolinea;	
-	private int asientos_totales;
-	private int asientos_libres;
-	
+	@NotPersistent
+	private Date fechaHoraSalida;
+	@NotPersistent
+	private Date fechaHoraLlegada;
+	@NotPersistent
+	private Aeropuerto aOrig;
+	@NotPersistent
+	private Aeropuerto aDest;
+	@NotPersistent
+	private Aerolinea aerolinea;
+	@NotPersistent
+	private int sistemaRegistro;
+	@NotPersistent
+	private int asientosLibres;
+
 	//Constructor
-	public Vuelo(int codigo, Date fecha_hora_salida, Date fecha_hora_llegada, int asientos_totales,
-			int asientos_libres) {
-		this.codigo = codigo;
-		this.fecha_hora_salida = fecha_hora_salida;
-		this.fecha_hora_llegada = fecha_hora_llegada;
-		this.asientos_totales = asientos_totales;
-		this.asientos_libres = asientos_libres;
+	public Vuelo() {
+		this.codigo = 0;
+		this.fechaHoraSalida = null;
+		this.fechaHoraLlegada = null;
+		this.aDest = new Aeropuerto();
+		this.aOrig = new Aeropuerto();
+		this.sistemaRegistro = 0;
+		this.asientosLibres = 0;
 	}
 	
 	//Getters y Setters
 	public int getCodigo() {
 		return codigo;
 	}
-	
-	public Date getFecha_hora_salida() {
-		return fecha_hora_salida;
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
-	public void setFecha_hora_salida(Date fecha_hora_salida) {
-		this.fecha_hora_salida = fecha_hora_salida;
+	public Aeropuerto getaOrig() {
+		return aOrig;
 	}
 
-	public Date getFecha_hora_llegada() {
-		return fecha_hora_llegada;
+	public void setaOrig(Aeropuerto aOrig) {
+		this.aOrig = aOrig;
 	}
 
-	public void setFecha_hora_llegada(Date fecha_hora_llegada) {
-		this.fecha_hora_llegada = fecha_hora_llegada;
-	}	
-
-	public int getCod_aeropuerto_orig() {
-		return cod_aeropuerto_orig;
+	public Aeropuerto getaDest() {
+		return aDest;
 	}
 
-	public void setCod_aeropuerto_orig(int cod_aeropuerto_orig) {
-		this.cod_aeropuerto_orig = cod_aeropuerto_orig;
+	public void setaDest(Aeropuerto aDest) {
+		this.aDest = aDest;
 	}
 
-	public int getCod_aeropuerto_dest() {
-		return cod_aeropuerto_dest;
+	public Aerolinea getAerolinea() {
+		return aerolinea;
 	}
 
-	public void setCod_aeropuerto_dest(int cod_aeropuerto_dest) {
-		this.cod_aeropuerto_dest = cod_aeropuerto_dest;
-	}
-
-	public int getCod_aerolinea() {
-		return cod_aerolinea;
-	}
-
-	public void setCod_aerolinea(int cod_aerolinea) {
-		this.cod_aerolinea = cod_aerolinea;
-	}
-
-	public int getAsientos_totales() {
-		return asientos_totales;
-	}
-
-	public void setAsientos_totales(int asientos_totales) {
-		this.asientos_totales = asientos_totales;
-	}
-
-	public int getAsientos_libres() {
-		return asientos_libres;
-	}
-
-	public void setAsientos_libres(int asientos_libres) {
-		this.asientos_libres = asientos_libres;
+	public void setAerolinea(Aerolinea aerolinea) {
+		this.aerolinea = aerolinea;
 	}
 	
-	
-	
+	public Date getFechaHoraSalida() {
+		return fechaHoraSalida;
+	}
 
+	public void setFechaHoraSalida(Date fechaHoraSalida) {
+		this.fechaHoraSalida = fechaHoraSalida;
+	}
+
+	public Date getFechaHoraLlegada() {
+		return fechaHoraLlegada;
+	}
+
+	public void setFechaHoraLlegada(Date fechaHoraLlegada) {
+		this.fechaHoraLlegada = fechaHoraLlegada;
+	}
+
+	public int getSistemaRegistro() {
+		return sistemaRegistro;
+	}
+
+	public void setSistemaRegistro(int sistemaRegistro) {
+		this.sistemaRegistro = sistemaRegistro;
+	}
+
+	public int getAsientosLibres() {
+		return asientosLibres;
+	}
+
+	public void setAsientosLibres(int asientosLibres) {
+		this.asientosLibres = asientosLibres;
+	}
 }

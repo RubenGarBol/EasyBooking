@@ -43,10 +43,13 @@ public class Main {
 
 		//CREAR DATOS PARA INSERTAR
 		//Aerolinea
-		Aerolinea a1 = new Aerolinea(1, "Bilbao");
-		Aerolinea a2 = new Aerolinea(2, "Madrid");
-		Aerolinea a3 = new Aerolinea(3, "Barcelona");
-		Aerolinea a4 = new Aerolinea(4, "Granada");
+		Aerolinea a1 = new Aerolinea();
+		//TODO Asinar atributos
+		Aerolinea a2 = new Aerolinea();
+		Aerolinea a3 = new Aerolinea();
+		Aerolinea a4 = new Aerolinea();
+
+		//TODO Crear Vuelos
 
 		//Inicio del programa
 		System.out.println("Easybooking JDO test:");

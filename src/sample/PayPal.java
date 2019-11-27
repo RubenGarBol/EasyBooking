@@ -21,6 +21,4 @@ public class PayPal extends Pago{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
 }

@@ -2,6 +2,7 @@ package sample;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.jdo.annotations.NotPersistent;
 import javax.jdo.annotations.PersistenceCapable;
 import javax.jdo.annotations.PrimaryKey;
 
@@ -11,42 +12,34 @@ public class Reserva {
 	//Atributos
 	@PrimaryKey
 	private int codigo;
-	private Date fecha_reserva;
-	private int cod_vuelo;
+	@NotPersistent
+	private Date fechaReserva;
+	@NotPersistent
+	private Vuelo vuelo;
+	@NotPersistent
 	private float importe;
-	private SisPago metodo_pago;
-	private ArrayList<String> nombrepasajeros;
+	@NotPersistent
+	private SisPago metodoPago;
+	@NotPersistent
+	private ArrayList<String> nombrePasajeros;
 	
 	//Constructor
-	public Reserva(int codigo, Date fecha_reserva, int cod_vuelo, float importe, SisPago metodo_pago,
-			ArrayList<String> nombrepasajeros) {
-		super();
-		this.codigo = codigo;
-		this.fecha_reserva = fecha_reserva;
-		this.cod_vuelo = cod_vuelo;
-		this.importe = importe;
-		this.metodo_pago = metodo_pago;
-		this.nombrepasajeros = nombrepasajeros;
+	public Reserva() {
+		this.codigo = 0;
+		this.fechaReserva = null;
+		this.vuelo = new Vuelo();
+		this.importe = 0;
+		this.metodoPago = null;
+		this.nombrePasajeros = new ArrayList<String>();
 	}
+
 	//Getters y Setters
 	public int getCodigo() {
 		return codigo;
 	}
 
-	public Date getFecha_reserva() {
-		return fecha_reserva;
-	}
-
-	public void setFecha_reserva(Date fecha_reserva) {
-		this.fecha_reserva = fecha_reserva;
-	}
-
-	public int getCod_vuelo() {
-		return cod_vuelo;
-	}
-
-	public void setCod_vuelo(int cod_vuelo) {
-		this.cod_vuelo = cod_vuelo;
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 
 	public float getImporte() {
@@ -58,16 +51,46 @@ public class Reserva {
 	}
 	
 	public int getNumPasajeros() {
-		return this.getNombrepasajeros().size();
+		return this.getNombrePasajeros().size();
 	}
 
-	public ArrayList<String> getNombrepasajeros() {
-		return nombrepasajeros;
+	public ArrayList<String> getNombrePasajeros() {
+		return nombrePasajeros;
 	}
 
-	public void setNombrepasajeros(ArrayList<String> nombrepasajeros) {
-		this.nombrepasajeros = nombrepasajeros;
+	public void addNombrePasajero(String nom){
+		this.getNombrePasajeros().add(nom);
 	}
-	
-	
+
+	public void removeNombrePasajero(String nom){
+		this.getNombrePasajeros().remove(nom);
+	}
+
+	public Date getFechaReserva() {
+		return fechaReserva;
+	}
+
+	public void setFechaReserva(Date fechaReserva) {
+		this.fechaReserva = fechaReserva;
+	}
+
+	public Vuelo getVuelo() {
+		return vuelo;
+	}
+
+	public void setVuelo(Vuelo vuelo) {
+		this.vuelo = vuelo;
+	}
+
+	public SisPago getMetodoPago() {
+		return metodoPago;
+	}
+
+	public void setMetodoPago(SisPago metodoPago) {
+		this.metodoPago = metodoPago;
+	}
+
+	public void setNombrePasajeros(ArrayList<String> nombrePasajeros) {
+		this.nombrePasajeros = nombrePasajeros;
+	}
 }
